@@ -3,19 +3,19 @@ header:
   name: Ruben Kharel
   suffix: DevOps | Software engineer
   display_contact_info: true
-  current_title: DevOps Engineer
+  current_title: DevOps Engineer | Software Developer
   intro: >
-    I am a backend developer actively developing webs and also learner who is passively learning different field of tech.
+    I am a backend developer actively developing webs and also learner who is passively learning various nerdy stuff.
 contact:
-  #address: 123 Main St, Test, CA 91234
-  #phone: (123) 456-7890
+  #address: Kathmandu, Nepal
+  # phone: 980000000
   email: resume@rubenk.com.np
 sections:
   experience:   true
   education:    true
   projects:     true
   skills:       true
-  recognition:  true
+  recognition:  false
   associations: false
   interests:    true
   links:        true
