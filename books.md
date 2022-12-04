@@ -26,14 +26,16 @@ description: Book reviews and recommendations, reading goal tracker
     }
 </style>
 
-In order to try and enforce a habit of reading daily, I'm making this a public page on my blog. With a full year calendar to indicate the days I've read. Similar to the ["Every Day Calendar" by Simone Giertz](https://www.simonegiertz.com/every-day-calendar){:target="_blank"}...but I can't afford one, and this site is free.
+In order to try and enforce a habit of reading daily, I'm making this a public page on my blog. With a full year calendar to indicate the days I've read. Similar to the ["Every Day Calendar" by Simone Giertz](https://www.simonegiertz.com/every-day-calendar){:target="\_blank"}...but I can't afford one, and this site is free.
 
 ## Current book:
+
 {% assign currentBooks = site.data.books | where: "isCurrent", true %}
 {% for book in currentBooks %}
-* [*{{ book.title }}*{% if book.author %} by {{ book.author }}{% endif %}]({{ book.link }}){:target="_blank"}
-{% if book.summary %}  * {{ book.summary }}{% endif %}
-{% endfor %}
+
+- [*{{ book.title }}*{% if book.author %} by {{ book.author }}{% endif %}]({{ book.link }}){:target="\_blank"}
+  {% if book.summary %} \* {{ book.summary }}{% endif %}
+  {% endfor %}
 
 <!--
     What a mess...Jekyll does not handle dates very well. So I had to come up with this hack.
@@ -43,6 +45,7 @@ In order to try and enforce a habit of reading daily, I'm making this a public p
 
     Then I look up the date record corresponding to the current year and use those for filtering.
 -->
+
 {% assign currentYear = "now" | date: "%Y" | to_integer %}
 {% assign currentYearRecord = site.data.dates | where_exp: "item", "item.year == currentYear" %}
 {% assign recentBooks = site.data.books
@@ -52,57 +55,63 @@ In order to try and enforce a habit of reading daily, I'm making this a public p
         | group_by_exp: "item", "item.completeDate | date: '%B'"
 %}
 {% if recentBooks.size > 0 %}
+
 ## Recently finished books:
 
 {% for month in recentBooks %}
-### {{ month.name | capitalize }}:
-{% for book in month.items %}
-* [*{{ book.title }}*{% if book.author %} by {{ book.author }}{% endif %}]({{ book.link }}){:target="_blank"}
-{% if book.rating %}  * My rating: {{ book.rating }}{% endif %}
-{% if book.summary %}  * Summary: {{ book.summary }}{% endif %}
-{% endfor %}
-{% endfor %}
-{% endif %}
 
-----
+### {{ month.name | capitalize }}:
+
+{% for book in month.items %}
+
+- [*{{ book.title }}*{% if book.author %} by {{ book.author }}{% endif %}]({{ book.link }}){:target="\_blank"}
+  {% if book.rating %} _ My rating: {{ book.rating }}{% endif %}
+  {% if book.summary %} _ Summary: {{ book.summary }}{% endif %}
+  {% endfor %}
+  {% endfor %}
+  {% endif %}
+
+---
+
+ <!-- ❌  |  ✅  -->
 
 ## 2022 Reading
 
-| ###  | Jan  | Feb  | Mar  | Apr  | May  | Jun  | Jul  | Aug  | Sep  | Oct  | Nov  | Dec  |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-|  1   |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  2   |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  3   |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  4   |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  5   |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  6   |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  7   |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  8   |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  9   |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  10  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  11  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  12  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  13  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  14  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  15  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  16  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  17  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  18  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  19  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  20  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  21  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  22  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  23  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ❌  |  ❌  |      |      |      |
-|  24  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ❌  |  ❌  |      |      |      |
-|  25  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  26  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  27  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  28  |  ❌  |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  29  |  ❌  |  -   |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  30  |  ❌  |  -   |  ❌  |  ❌  |  ✅  |  ✅  |  ✅  |  ✅  |  ❌  |      |      |      |
-|  31  |  ❌  |  -   |  ❌  |  -   |  ✅  |  -   |  ✅  |  ✅  |  -   |      |  -   |      |
+| ### | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+|  1  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+|  2  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+|  3  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+|  4  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+|  5  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+|  6  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+|  7  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+|  8  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+|  9  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 10  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 11  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 12  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 13  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 14  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 15  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 16  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 17  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 18  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 19  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 20  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 21  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 22  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 23  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 24  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 25  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 26  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 27  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 28  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 29  | ❌  |  -  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 30  | ❌  |  -  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  | ❌  |
+| 31  | ❌  |  -  | ❌  |  -  | ❌  |  -  | ❌  | ❌  |  -  | ❌  |  -  | ❌  |
 
-----
+---
 
 ## Past reviews and recommendations:
 
@@ -111,10 +120,11 @@ In order to try and enforce a habit of reading daily, I'm making this a public p
         | sort: "title"
 %}
 {% for book in pastBooks %}
-* [*{{ book.title }}*{% if book.author %} by {{ book.author }}{% endif %}]({{ book.link }}){:target="_blank"}
-{% if book.rating %}  * My rating: {{ book.rating }}{% endif %}
-{% if book.summary %}  * Summary: {{ book.summary }}{% endif %}
-{% endfor %}
+
+- [*{{ book.title }}*{% if book.author %} by {{ book.author }}{% endif %}]({{ book.link }}){:target="\_blank"}
+  {% if book.rating %} _ My rating: {{ book.rating }}{% endif %}
+  {% if book.summary %} _ Summary: {{ book.summary }}{% endif %}
+  {% endfor %}
 
 ## Todo List:
 
@@ -124,6 +134,7 @@ In order to try and enforce a habit of reading daily, I'm making this a public p
         | sort: "title"
 %}
 {% for book in todoSorted %}
-* [*{{ book.title }}*{% if book.author %} by {{ book.author }}{% endif %}]({{ book.link }}){:target="_blank"}
-{% if book.summary %}  * {{ book.summary }}{% endif %}
-{% endfor %}
+
+- [*{{ book.title }}*{% if book.author %} by {{ book.author }}{% endif %}]({{ book.link }}){:target="\_blank"}
+  {% if book.summary %} \* {{ book.summary }}{% endif %}
+  {% endfor %}
