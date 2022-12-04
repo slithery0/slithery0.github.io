@@ -1,0 +1,45 @@
+- company: "Nassec"
+  summary: "A young security enthusiast driven company filled with security researchers to provide ultimate security solution for websites and mobile applications."
+  logo: "/img/companylogos/nassec.jpg"
+  url: "https://www.reconwithme.com/"
+  positions:
+  - title: "Security Researcher & Nodejs Developer"
+    startdate: 2020-12-14
+    enddate: 2021-01-12
+    summary: "Worked on scrapping some security related stuff, developed few mini tools for scanning the web."
+    projects:
+      - "Collaborated with 3rd party data providers to build integrations for tasks such as SalesForce data syncing, email/address sanitization, data appends and ETL processes"
+      - "Helped maintain and improve an elaborate calculation engine written in SQL to support new features and settings"
+      - "Tuned existing SQL code to run faster and more efficiently reducing both runtime and resource usage through query and index tuning by analyzing execution plans, server statistics, dynamic management views (DMV's), SQL Server First Responder Kit and SentryOne Plan Explorer"
+      - "Worked on many ETL projects using SQL, C#, PowerShell and batch scripting, and SSIS packages"
+      - "Contributed to complex back-end services written in C# utilizing technologies such as Elasticsearch, RabbitMQ, Redis, Amazon SNS, Amazon SES, Amazon S3, Docker, Selenium web scraping, and handling files via FTP"
+      - "Experience with using collaboration and CI/CD tools including Jenkins, Slack, Upsource, Jira and Confluence"
+      - "Worked primarily with SQL Server versions 2008, 2012, 2014 practicing good HA/DR policies, using replication and Always On availability groups"
+      - "Used AWS tools for troubleshooting, logging and deployment such as CloudWatch, CodeDeploy, and managing/monitoring servers through EC2"
+  - title: "Backend Developer"
+    startdate: 2021-02-04
+    enddate: 2022-02-01
+    summary: "As a backend developer of a vulnerability scanning tool, I developed RESTful api which scans various tools and technelogy and gather vulnerable informations of the target."
+    projects:
+      - "Worked haviely on building vulnerability scanning methodes"
+      - "Actively maintained AWS infracture of the product (ec2, SES, SNS, ECR ...) along with CI/CD with github action and docker."
+  - title: "Project Manager"
+    startdate: 2022-02-01
+    enddate: 2022-09-01
+    summary: "Managed technical aspect of the project called ReconwithMe, which was a automated vulnerability scanning and penetration testing tool, developed by security researchers for IT security teams."
+    projects:
+
+# - company: "Albert A. Webb Associates"
+#   summary:
+#   logo: "/img/companylogos/aawa.png"
+#   url: "https://www.webbassociates.com/"
+#   positions: 
+#   - title: "IT Intern / Network Technician"
+#     startdate: 2008-10-13
+#     enddate: 2012-06-01
+#     summary: "Supported a large multi-location network which hosted on-prem services for hundreds of civil engineers. Assisted in the installation and configuration of SAN, virtualization, network and power equipment."
+#     projects:
+#       - "Eliminated the need for hiring Cisco consultants by learning to support the Cisco devices through personal research, and formal courses offered at the local college"
+#       - "In charge of installing, configuring and managing network monitoring software for hundreds of network devices using Nagios"
+#       - "Established a reliable system for imaging and deploying desktops for new users"
+

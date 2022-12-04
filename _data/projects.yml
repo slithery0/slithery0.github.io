@@ -1,0 +1,6 @@
+- project: eReKon
+  role: Developer, Open-Source Contributor
+  duration: 2021 &mdash; Present
+  url: "https://github.com/slithery0/erekon"
+  description: >
+    "eReKon is web recon tool that helps search and scan information related to a website or domain. It mines domain info, gathers subdomains, scrapping and indexing public information, finds website technologies, finds out DNS and WHOIS information, crawls subdomain pages. In a nutshell, it is a single solution to quickly identify public information, find hidden targets, and monitor changes."

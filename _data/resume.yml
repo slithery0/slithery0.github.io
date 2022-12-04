@@ -1,0 +1,31 @@
+theme: default
+header:
+  name: Ruben Kharel
+  suffix: DevOps | Software engineer
+  display_contact_info: true
+  current_title: DevOps Engineer
+  intro: >
+    I am a backend developer actively developing webs and also learner who is passively learning different field of tech.
+contact:
+  #address: 123 Main St, Test, CA 91234
+  #phone: (123) 456-7890
+  email: resume@rubenk.com.np
+sections:
+  experience:   true
+  education:    true
+  projects:     true
+  skills:       true
+  recognition:  true
+  associations: false
+  interests:    true
+  links:        true
+  social_links: false
+social:
+  Website:    http://rubenk.com.np
+  GitHub:     https://github.com/slithery0
+  # Twitter:    https://twitter.com/
+  #Dribbble:  https://dribbble.com/
+  #FaceBook:  https://facebook.com/
+  LinkedIn:   https://linkedin.com/in/rubenkharel
+  #Instagram: https://instagram.com/
+  #Medium:    https://medium.com/

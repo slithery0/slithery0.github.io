@@ -1,0 +1,99 @@
+theme: minima
+
+title: Ruben's Blog
+author: Ruben Kharel
+email: blog@rubenkh.is
+url: https://rubenkh.is
+
+timezone: Etc/UTC # GitHub uses UTC. This is to force dev environment to match
+future: false # GitHub Pages will publish future posts if this isn't set to false
+
+description: >
+  I write blogs here. And share some of my personal stuff.
+
+# Minima variables
+twitter_username:  rubenkh
+github_username:   slithery0
+linkedin_username: rubenkharel
+#dribbble_username: jekyll
+#facebook_username: jekyll
+#flickr_username: jekyll
+#instagram_username: jekyll
+#pinterest_username: jekyll
+#youtube_username: jekyll
+#googleplus_username: +jekyll
+rss: rss
+
+show_excerpts: false
+
+# Used by simple links page
+social-links:
+  Resume:        https://rubenkh.is/resume
+  LinkedIn:      https://linkedin.com/in/rubenkharel
+  # StackOverflow: https://stackoverflow.com/users/3474677
+  # HackerRank:    https://hackerrank.com/chadwin
+  GitHub:        https://github.com/slithery0
+  # Twitter:       https://twitter.com/
+  # Reddit:        https://reddit.com/user/chadbaldwin
+  # Credly:        https://credly.com/users/chadbaldwin
+  # PluralSight:   https://app.pluralsight.com/profile/chadbaldwin
+  Website:       https://rubenkh.is
+
+# plugin: jekyll-seo-tag
+twitter:
+  username: rubenkharel
+  card: summary_large_image
+social:
+  name: Ruben Kharel
+  links:
+    - https://twitter.com/rubenkh
+    - https://linkedin.com/in/rubenkharel
+    - https://github.com/slithery0
+
+# plugin: jekyll-titles-from-headings
+titles_from_headings:
+  strip_title: true
+
+collections:
+  personal: # collection for personal blog posts
+    output: true
+
+header_pages:
+  - resume.html
+  - archive.html
+  - books.md
+  - bookmarks.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+google_analytics:
+  - UA-185058308-1 # Old GA Universal Analytics property
+  - G-RY6FRPMXHZ # New GA4 property
+
+gravatar_hash: 2136e716a089f4a3794f4007328c7bfb
+code_block_max_height: 500px
+
+home_post_limit: 5
+
+# The github repo that is to be used for looking up comments
+comments_repo: slithery0/slithery0.github.io
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: https://s.gravatar.com/avatar/2136e716a089f4a3794f4007328c7bfb?s=800 # Apply default site image
+  - scope:
+      path: ""
+      type: posts
+    values:
+      tags:
+        - Other # Add a default tag to all posts
+
+# Disable highlighting to use highlightJS instead
+# highlighter: none # Not supported by GitHub Pages
+kramdown:
+  syntax_highlighter_opts:
+    disable: true

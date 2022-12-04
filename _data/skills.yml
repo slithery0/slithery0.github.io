@@ -1,0 +1,26 @@
+#- skill: string
+#  description: string
+#  list:
+#    - array
+#    - of
+#    - strings
+#
+# Template supports both a description AND a skill list, however it may look best if only one or the
+# other is used. Lists are sorted and concatenated without line breaks separated by • (&bull;)
+
+- skill: Web Development
+  description: "2+ years of experience in RESTful api with express and node, security tool development, nosql etc."
+- skill: Linux
+  description: "5+ years experience with linux system, played with various destros, package manager and settled down finally with Arch OS."
+- skill: Tools & Technologies
+  list:
+    - nodejs, python
+    - AWS Services (CloudWatch, EC2, S3, SES, SNS, Secrets Manager)
+    - Docker
+    - Kubernetes
+    - git/github/gitlab
+    - Github-action
+    - Postman
+    - Bash
+    - VS Code
+    - Various security tools (nmap, nc, metasploit, frida, burp etc.)
