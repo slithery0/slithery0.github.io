@@ -8,33 +8,19 @@
 
 - title: How to Win Friends and Influence People
   author: Dale Carnegie
-  summary: Dale Carnegie’s rock-solid, time-tested advice has carried countless people up the ladder of success in their business and personal lives. One of the most groundbreaking and timeless bestsellers of all time they say.
-  # summary: \"Operations Anti-Patterns, DevOps Solutions shows how to implement DevOps techniques in the kind of imperfect environments most developers work in. Part technology tutorial, part reference manual, and part psychology handbook, this practical guide shows you realistic ways to bring DevOps to your team when you don’t have the flexibility to make sweeping changes in organizational structure.\"
+  # summary: Dale Carnegie’s rock-solid, time-tested advice has carried countless people up the ladder of success in their business and personal lives. One of the most groundbreaking and timeless bestsellers of all time they say.
   link: https://a.co/d/5u0mqL5
   startDate: 2022-12-01
   isCurrent: true
 
-- title: "T-SQL Querying"
-  author: Itzik Ben-Gan, Adam Machanic, Dejan Sarka, Kevin Farlee
-  summary: From what I can tell, it's basically an extended version of T-SQL Fundamentals, which was already an incredible book. Can't wait to get to this one.
-  link: https://amzn.to/39BLMzk
-
-- title: "A Brief History of Time"
-  author: Stephen Hawking
-  link: https://amzn.to/3s9xoWm
+- title: "Clean Code"
+  author: Robert C. Martin
+  # summary: From what I can tell, it's basically an extended version of T-SQL Fundamentals, which was already an incredible book. Can't wait to get to this one.
+  link: https://a.co/d/iBN6TSt
 
 - title: Phython Crash Course
   author: Eric Matthes
-  summary: This book was all I needed to crash through python. It was pretty quick, so beautifully written with a nice way to make you practice things, if you follow the book's guideline.
+  summary: This book was all I needed to learn python in just a week time. It was pretty quick, so beautifully written with a nice way to make you practice things, if you follow the book's guideline.
   link: https://a.co/d/fdKCJOt
   rating: ⭐⭐⭐⭐⭐
   completeDate: 2019-01-01
-
-- title: "Algorithms to Live By: The Computer Science of Human Decisions"
-  author: Brian Christian, Tom Griffiths
-  summary: I've actually already "read" this via audio book, but I think it would be better as an actual physical book
-  link: https://amzn.to/3ijrSgk
-
-- title: "The Lean Startup"
-  author: Eric Ries
-  link: https://amzn.to/3dmYtRW

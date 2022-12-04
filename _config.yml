@@ -69,10 +69,10 @@ plugins:
   - jekyll-sitemap
 
 google_analytics:
-  - UA-185058308-1 # Old GA Universal Analytics property
-  - G-RY6FRPMXHZ # New GA4 property
+  # - UA-185058308-1 # Old GA Universal Analytics property
+  # - G-RY6FRPMXHZ # New GA4 property
 
-gravatar_hash: 2136e716a089f4a3794f4007328c7bfb
+gravatar_hash: 229086362/1cd9565e231ed0a6eeaf0c7e1b268e49
 code_block_max_height: 500px
 
 home_post_limit: 5
@@ -84,7 +84,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: https://s.gravatar.com/avatar/2136e716a089f4a3794f4007328c7bfb?s=800 # Apply default site image
+      image: https://s.gravatar.com/avatar/229086362/1cd9565e231ed0a6eeaf0c7e1b268e49?s=800 # Apply default site image
   - scope:
       path: ""
       type: posts
