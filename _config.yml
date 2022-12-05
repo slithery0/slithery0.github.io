@@ -72,7 +72,7 @@ google_analytics:
   # - UA-185058308-1 # Old GA Universal Analytics property
   # - G-RY6FRPMXHZ # New GA4 property
 
-gravatar_hash: 229086362/1cd9565e231ed0a6eeaf0c7e1b268e49
+gravatar_hash: e2af883f58947c40d0ba57ee34c278e5
 code_block_max_height: 500px
 
 home_post_limit: 5
@@ -84,7 +84,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: https://s.gravatar.com/avatar/229086362/1cd9565e231ed0a6eeaf0c7e1b268e49?s=800 # Apply default site image
+      image: https://s.gravatar.com/avatar/e2af883f58947c40d0ba57ee34c278e5?s=800 # Apply default site image
   - scope:
       path: ""
       type: posts
