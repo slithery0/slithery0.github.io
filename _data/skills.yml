@@ -11,7 +11,7 @@
 - skill: Web Development
   description: "2+ years of experience in RESTful api with express and node, security tool development, nosql etc."
 - skill: Linux
-  description: "5+ years experience with linux system, played with various destros, package manager and settled down finally with Arch OS."
+  description: "5+ years experience with linux system, played with various destros, package manager and settled down finally with Arch & Pacman."
 - skill: Tools & Technologies
   list:
     - nodejs, python

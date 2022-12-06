@@ -1,11 +1,11 @@
 theme: default
 header:
   name: Ruben Kharel
-  suffix: DevSecOps
+  # suffix: 
   display_contact_info: true
-  current_title: DevOps Engineer | Software Developer
+  current_title: Wen Dev | DevOps
   intro: >
-    I am a backend developer actively developing webs and also learner who is passively learning various nerdy stuff.
+    I am a Developer and DevOps guy actively developing webs and also a learner, passively learning various nerdy stuff.
 contact:
   #address: Kathmandu, Nepal
   # phone: 980000000
