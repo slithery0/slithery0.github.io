@@ -9,9 +9,13 @@ image: img/postbanners/2022-06-02-whats-new-in-sql-server-2022.png
 
 <style> .hljs { max-height: 1000px; } </style>
 
-# Software and Applications I prefer to have installed
+I am a huge believer and supporter of opensource community. As it offers the freedom of customization of the software, access to a wide range of resource and support from the community, the opportunity to collaborate with other users, and the chance to contribute to the development of something great. The opensource community also allows users to experiment with their software without the fear of being locked into expensive licensing fees.
+
+I used opensource tool as much as I can. So here are various day to day opensource softwares and applications I use on my day to day life. 
 
 ## On Linux
+
+`not a complete list, will be updated from time to time.` 
 
 ---
 
