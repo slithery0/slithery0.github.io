@@ -6,17 +6,12 @@
 #   isCurrent: bool - indicating currently reading
 #   completeDate: date of completion
 
-- title: How to Win Friends and Influence People
-  author: Dale Carnegie
-  summary: Dale Carnegie’s rock-solid, time-tested advice has carried countless people up the ladder of success in their business and personal lives. Hoping this will help me in same way, Sofar it's fun to read. I believe it helps develope social, communication skills of nerd like us.
-  link: https://a.co/d/5u0mqL5
-  startDate: 2022-12-01
-  isCurrent: true
-
 - title: "Clean Code"
   author: Robert C. Martin
-  # summary: From what I can tell, it's basically an extended version of T-SQL Fundamentals, which was already an incredible book. Can't wait to get to this one.
+  summary: Someone reccomended me this book as a must read if you ever write code. Which I basically do everyday.
   link: https://a.co/d/iBN6TSt
+  startDate: 2022-12-06
+  isCurrent: true
 
 - title: Phython Crash Course
   author: Eric Matthes
