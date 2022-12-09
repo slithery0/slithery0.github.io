@@ -4,18 +4,18 @@ title: "Apps that keeps me sane"
 description: "The list of apps and softwares I use."
 date: 2022-01-15T12:30:00-07:00
 tags: Opensource
-image: img/postbanners/2022-06-02-whats-new-in-sql-server-2022.png
+image: img/postbanners/oss.png
 ---
 
 <style> .hljs { max-height: 1000px; } </style>
 
 I am a huge believer and supporter of opensource community. As it offers the freedom of customization of the software, access to a wide range of resource and support from the community, the opportunity to collaborate with other users, and the chance to contribute to the development of something great. The opensource community also allows users to experiment with their software without the fear of being locked into expensive licensing fees.
 
-I used opensource tool as much as I can. So here are various day to day opensource softwares and applications I use on my day to day life. 
+I used opensource tool as much as I can. So here are various day to day opensource softwares and applications I use on my day to day life.
 
 ## On Linux
 
-`not a complete list, will be updated from time to time.` 
+`not a complete list, will be updated from time to time.`
 
 ---
 
@@ -77,7 +77,8 @@ More to be added...
 | [Seal](https://f-droid.org/en/packages/com.junkfood.seal/)                                        | yt-dlp in an app                                                 | Utilities         | Opensource |
 | [AnonAddy](https://f-droid.org/packages/host.stjin.anonaddy/)                                     | Email Aliases for preventing spams                               | Utilities         | Fremium    |
 | [App Checker](https://play.google.com/store/apps/details?id=com.kroegerama.appchecker)            | Checks apps and system informations                              | Info              | Ads        |
-|                                                                                                   |                                                                  |                   |
+| [Tachiyomi](https://github.com/tachiyomiorg/tachiyomi)                                            | Manga Reader                                                     | Reader            | Opensource |
+|                                                                                                   |                                                                  |                   |            |
 
 Legend
 
