@@ -2,7 +2,7 @@ theme: minima
 
 title: Ruben's Blog
 author: Ruben Kharel
-email: blog@rubenk.com.np
+email: talkto@rubenk.com.np
 url: https://rubenk.com.np
 
 timezone: Etc/UTC # GitHub uses UTC. This is to force dev environment to match
